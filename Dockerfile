@@ -19,7 +19,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /payment-gateway ./cmd/server
 FROM alpine:3.19
 
 # utente non-root per sicurezza
-RUN adduser -D-g '' appuser
+RUN adduser -D -g '' appuser
 
 WORKDIR /home/appuser/
 
