@@ -22,7 +22,7 @@ Questo progetto dimostra un ciclo completo di sviluppo Cloud-Native, focalizzand
 - CI/CD: GitHub Actions
 - Registry: GitHub Container Registry
 - Orchestrazione: Kubernetes (Deployment, Service, SecurityContext)
-- Strumenti di Intelligenza Artificiale per configurazioni docker e kubernetes
+- Strumenti di Intelligenza Artificiale: Utilizzo strategico di strumenti di IA generativa per l'accelerazione del boilerplate di configurazione (Docker/K8s) e l'ottimizzazione del ciclo di debugging.
 
 ---
 
