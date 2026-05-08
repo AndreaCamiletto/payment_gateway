@@ -61,5 +61,11 @@ PUT /payments/{id}
 
 - curl -X PUT http://localhost:8080/payments/{id}
 
+## Docker
 
+Il progetto include un Dockerfile per la containerizzazione dell’applicazione.
+
+L’immagine Docker può essere buildata tramite:
+
+docker build -t mock-payment .
 
