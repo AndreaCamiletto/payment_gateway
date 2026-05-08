@@ -24,13 +24,11 @@ USER 10001
 
 WORKDIR /home/appuser/
 
-COPY --from=builder /payment-gateway .
-
 # proprietario del file e\' l'utente non-root
-RUN chown appuser:appuser payment-gateway
+COPY --from=builder --chown=10001:10001 /payment-gateway .
 
 # Eseguo come utente non-root
-USER appuser
+USER 10001
 
 EXPOSE 8080
 
