@@ -81,13 +81,14 @@ kubectl get pods
 
 ---
 
-## API e esempi CURL (Linux)
+## API e esempi CURL (Windows)
 
+Nota: Per testare su localhost, eseguire kubectl port-forward svc/payment-gateway-service 8080:80
 
 ### Crea pagamento
 
 POST /payments 
-- curl -X POST http://localhost:8080/payments -H "Content-Type: application/json" -d '{\"amount\":1000,\"currency\":\"EUR\"}'
+- curl -X POST http://localhost:8080/payments -H "Content-Type: application/json" -d "{\"amount\":1000,\"currency\":\"EUR\"}"
 
 ### Recupera pagamento
 
